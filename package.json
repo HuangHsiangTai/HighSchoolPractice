@@ -1,0 +1,12 @@
+{
+  "name": "high-school-practice-checks",
+  "private": true,
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test:setup": "playwright install chromium",
+    "test": "node --test tests/*.test.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.0"
+  }
+}

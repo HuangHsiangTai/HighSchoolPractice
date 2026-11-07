@@ -1,0 +1,18 @@
+{
+  "basic": [
+    "grade_11/biology/高二第一次段考/高二第一次段考_互動解題.html",
+    "grade_11/math/高二第一次段考/高二數學第一次段考_互動解題.html",
+    "grade_11/math/段考2週考1/週考1_互動解題.html",
+    "grade_11/physics/高二第一次段考/高二物理第一次段考_互動解題.html"
+  ],
+  "full": [
+    {
+      "path": "grade_11/math/段考2數輔2/20261106數輔2_互動解題.html",
+      "questions": [
+        { "id": "system-3", "type": "numeric", "correct": "2", "wrong": "999", "unit": "組", "tolerance": "0" },
+        { "id": "numeric-5", "type": "numeric", "correct": "3", "wrong": "999", "unit": "無單位", "tolerance": "1e-9" },
+        { "id": "text-6", "type": "multiple_choice", "correct": ["A", "B"], "wrong": ["A", "C"], "partial": ["A"] }
+      ]
+    }
+  ]
+}

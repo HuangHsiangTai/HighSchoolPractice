@@ -13,6 +13,7 @@
 - `options`：選項代號對文字的物件；非選擇題用空物件。
 - `requiredSelections`：應選數量；非選擇題或原題未限定時用 `null`。
 - `diagram`：無必要圖形時為 `null`；有圖時使用下方「圖片資料」的物件，記錄圖形條件、來源、處理及比對結果。
+- `recognitionEvidence`：關鍵符號辨識的本機暫存紀錄陣列；需要裁圖核對時必填，內容見下方「辨識證據」。不與 `diagram` 混用，不納入教材或 Git。
 - `uncertainties`：字串陣列，記錄仍無法確認的辨讀處；已核對無誤時為空陣列。
 
 ## 解題資料
@@ -27,6 +28,17 @@
 - `optionAnalysis`：選項代號對解析的物件，非選擇題為空物件。
 - `pitfalls`、`notes`：字串陣列，分別為教學注意事項與題面疑義／適用假設。無內容時為空陣列。
 - `practice`：包含 `type`、`stem`、`options`、`requiredSelections`、`answer`、`answerText` 與 `steps`；非選擇題另有 `grading`，明確定義數值容許誤差與單位，或可接受的文字答案。練習需有可確定的正解。
+
+## 辨識證據
+
+`recognitionEvidence` 每筆包含：
+
+- `source`：原圖檔名、來源頁及原圖像素裁切區域 `x`、`y`、`width`、`height`，原點為左上角。
+- `path`：本機暫存裁圖路徑，供辨識審核與交接使用。
+- `transcription`：裁圖中影響答案的印刷內容與其轉錄，足以對照分數、底數、指數及其他關鍵符號。
+- `comparison`：物件，`status` 為 `pending`、`verified` 或 `unresolved`，`notes` 為比對說明字串陣列。所有必需證據均為 `verified` 才可定稿；未解疑義記入 `uncertainties`。
+
+原始含筆跡裁圖不交給首輪解題者；提供解題者的題目資料須移除 `recognitionEvidence` 暫存路徑及原始裁圖，只包含定稿題目、必要乾淨圖片與中性疑義。暫存辨識證據不提交 Git，也不內嵌至教材。
 
 ## 圖片資料
 

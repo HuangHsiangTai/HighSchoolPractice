@@ -108,6 +108,8 @@ def download(http, item, target):
 
 
 def main():
+    if hasattr(sys.stdout, 'reconfigure'):
+        sys.stdout.reconfigure(line_buffering=True)
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('folder', help='Drive folder URL or ID')
     parser.add_argument('--destination', help='Expected repository-relative destination; checked against Drive ancestry')

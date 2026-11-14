@@ -1,5 +1,7 @@
 # 教材瀏覽器檢查
 
+Drive 下載工具的離線測試：先執行 `python3 -m pip install -r tests/requirements-download.txt`，再執行 `python3 -m unittest discover -s tests -p 'test_download_practices.py'`。測試不需要 Google 憑證或網路。
+
 在儲存庫根目錄首次執行 `npm ci` 與 `npm run test:setup`，之後使用 `npm test`。需要 Linux 系統套件時可使用 `npx playwright install --with-deps chromium`。測試直接開啟本機 HTML，失敗時將截圖及錯誤資訊寫入 `test-results/`。
 
 `lessons.json` 的 `basic` 僅列已存在、尚未採用完整測試介面的教材；每份新教材須加入 `full`，否則測試會失敗。`full` 每筆的 `path` 是相對儲存庫根目錄的教材路徑，`questions` 依題目順序列出：

@@ -14,7 +14,7 @@ const results = path.join(root, 'test-results');
 const legacyBasic = [
   'grade_11/biology/高二第一次段考/高二第一次段考_互動解題.html',
   'grade_11/math/高二第一次段考/高二數學第一次段考_互動解題.html',
-  'grade_11/math/段考2週考1/週考1_互動解題.html',
+  'grade_11/math/段考2周考1/週考1_互動解題.html',
   'grade_11/physics/高二第一次段考/高二物理第一次段考_互動解題.html'
 ];
 let browser;

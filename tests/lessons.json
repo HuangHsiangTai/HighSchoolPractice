@@ -46,6 +46,16 @@
       "path": "grade_11/math/段考2周考2/20261114_數週2_互動解題.html",
       "questions": [
         {
+          "id": "p1-fill-2",
+          "type": "single_choice",
+          "correct": [
+            "A"
+          ],
+          "wrong": [
+            "B"
+          ]
+        },
+        {
           "id": "p1-fill-3",
           "type": "numeric",
           "correct": "-2",
@@ -82,6 +92,21 @@
           "tolerance": "0"
         },
         {
+          "id": "p2-fill-2",
+          "type": "multiple_choice",
+          "correct": [
+            "B",
+            "D"
+          ],
+          "wrong": [
+            "A",
+            "D"
+          ],
+          "partial": [
+            "B"
+          ]
+        },
+        {
           "id": "p2-fill-3",
           "type": "multiple_choice",
           "correct": [
@@ -91,6 +116,22 @@
           "wrong": [
             "A",
             "C"
+          ],
+          "partial": [
+            "A"
+          ]
+        },
+        {
+          "id": "p2-multiple-5",
+          "type": "multiple_choice",
+          "correct": [
+            "A",
+            "C",
+            "E"
+          ],
+          "wrong": [
+            "A",
+            "B"
           ],
           "partial": [
             "A"

@@ -146,6 +146,27 @@
           "tolerance": "0"
         }
       ]
+    },
+    {
+      "path": "grade_11/physics/段考2試題1/段考2試題1_互動解題.html",
+      "questions": [
+        {
+          "id": "example-4",
+          "type": "numeric",
+          "correct": "22.360679775",
+          "wrong": "30",
+          "unit": "m",
+          "tolerance": "0.01"
+        },
+        {
+          "id": "practice-4",
+          "type": "numeric",
+          "correct": "30",
+          "wrong": "20",
+          "unit": "m",
+          "tolerance": "0.01"
+        }
+      ]
     }
   ]
 }
